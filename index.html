@@ -7,15 +7,19 @@ title: Bob Schriver
 
 <h2> Projects </h2>
 
-{% for project in site.categories %}
-
-{{ project }}
-
-{% endfor %}
-
 {%for project in site.categories.project %}
 
 {{ project }}
+
+{%endfor%}
+
+</div>
+
+<div id='presnetations'>
+
+{%for presentation in site.categories.presentation%}
+
+{{ presentation }}
 
 {%endfor%}
 
