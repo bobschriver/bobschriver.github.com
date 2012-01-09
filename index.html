@@ -10,7 +10,7 @@ title: Bob Schriver
 {% for project in site.categories.project %}
 
 <h3>
-project.title
+{{ project.title }}
 </h3>
 
 {% endfor %}
@@ -23,7 +23,8 @@ project.title
 
 {% for post in site.posts %}
 
-post.categories
+{{ post.categories }}
+{{ post.title }}
 
 {%endfor%}
 
