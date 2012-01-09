@@ -9,7 +9,7 @@ title: Bob Schriver
 
 {%for project in site.categories.project %}
 
-{{ project }}
+<a href="{{ project.url }}">{{project.title}}</a>
 
 {%endfor%}
 
@@ -17,9 +17,11 @@ title: Bob Schriver
 
 <div id='presnetations'>
 
+<h2> Presentations </h2>
+
 {%for presentation in site.categories.presentation%}
 
-{{ presentation }}
+<a href="{{prentation.url}}">{{presentation.title}}</a>
 
 {%endfor%}
 
