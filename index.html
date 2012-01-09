@@ -3,16 +3,28 @@ layout: default
 title: Bob Schriver
 ---
 
+<div id='introduction'>
+
+<h2> Introduction </h2>
+
+<p>
+Hello, I'm Bob Schriver, and this is my personal internet info-site. Below are some projects and presentations I have worked on, as well as posts about projects I am currently researching.
+</p>
+
+</div>
+
 <div id='projects'>
 
 <h2> Projects </h2>
 
+<p>
 {%for project in site.categories.project %}
 
 <a href="{{ project.url }}">{{project.title}}</a>
 <br>
 
 {%endfor%}
+</p>
 
 </div>
 
@@ -20,12 +32,14 @@ title: Bob Schriver
 
 <h2> Presentations </h2>
 
+<p>
 {%for presentation in site.categories.presentation%}
 
 <a href="{{presentation.url}}">{{presentation.title}}</a>
 <br>
 
 {%endfor%}
+</p>
 
 </div>
 
@@ -33,11 +47,24 @@ title: Bob Schriver
 
 <h2> Posts </h2>
 
-{% for post in site.posts %}
+<p>
+{% for post in site.categories.blog %}
 
-{{ post.categories }}
-{{ post.title }}
+<a href="{{presentation.url}}">{{ post.title }}</a>
+<br>
 
 {%endfor%}
+</p>
 
 </div>
+
+<div id='resume'>
+
+<h2> Resume </h2>
+
+<p>
+My current resume is hosted <a href="https://github.com/bobschriver/resume">here</a>, in both .doc and .pdf formats
+</p>
+
+</div>
+
