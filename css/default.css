@@ -2,16 +2,26 @@ body {
 	background-color:#DCDCDC;
 }
 
+p {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+h2 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .section {
 	margin-left: auto;
 	margin-right: auto;
 	width: 30em;
 
-        font-family: "Arial", "Helvetica", sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
 
 	text-align: justify;
-	text-indent: 2em;
 
 	background-color: #F5F5F5;
-
 }
+
+

@@ -27,23 +27,30 @@ Hello, I'm Bob Schriver, and this is my personal internet info-site. Below are s
 <p>
 {%for project in site.categories.project %}
 
+<li>
+
 <a href="{{ project.url }}">{{project.title}}</a>
-<br>
+
+</li>
 
 {%endfor%}
 </p>
 
 </div>
 
-<div id='presnetations' class='section'>
+<div id='presentations' class='section'>
 
 <h2> Presentations </h2>
 
 <p>
+
 {%for presentation in site.categories.presentation%}
 
+<li>
+
 <a href="{{presentation.url}}">{{presentation.title}}</a>
-<br>
+
+<li>
 
 {%endfor%}
 </p>
@@ -57,8 +64,9 @@ Hello, I'm Bob Schriver, and this is my personal internet info-site. Below are s
 <p>
 {% for post in site.categories.blog %}
 
+<li>
 <a href="{{post.url}}">{{ post.title }}</a>
-<br>
+<li>
 
 {%endfor%}
 </p>
