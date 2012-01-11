@@ -50,7 +50,7 @@ Hello, I'm Bob Schriver, and this is my personal internet info-site. Below are s
 <p>
 {% for post in site.categories.blog %}
 
-<a href="{{presentation.url}}">{{ post.title }}</a>
+<a href="{{post.url}}">{{ post.title }}</a>
 <br>
 
 {%endfor%}
