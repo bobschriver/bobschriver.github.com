@@ -1,5 +1,13 @@
+body {
+	background-color:#DCDCDC;
+}
+
 .section {
 	margin-left: auto;
-	margin.right: auto;
-	width: 10em
+	margin-right: auto;
+	width: 30em;
+
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+	background-color:#F5F5F5;
 }
