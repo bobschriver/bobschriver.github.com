@@ -18,6 +18,9 @@ h2 {
 }
 
 .section {
+}
+
+.body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 30em;
@@ -27,6 +30,7 @@ h2 {
 	text-align: justify;
 
 	background-color: #F5F5F5;
+
 }
 
 
