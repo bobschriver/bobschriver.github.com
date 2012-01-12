@@ -11,27 +11,37 @@ categories: [project]
 
 <h2> Patch Match Algorithm </h2>
 
+<p>
 The purpose of this algorithm was to implement the <a href="http://gfx.cs.princeton.edu/pubs/_2011_PAF/index.php">Patch Match algorithm</a> for the purpose of Image Completion. Image Completion is the problem of filling a hole in an image realistically, that is, given an image with a hole in it, how do we fill the hole such that a viewer would not be able to tell that there was ever a hole.
+</p>
 
-<br>
-
+<p>
 The method by which this algorithm completes this task is fairly simple. First, we devise an algorithm to find patches (can be any square section of the image, ie 3x3 or 11x11) similar to the patch we are currently on. This is the general patch match algorithm. We then search for patches similar to patches on the edge of the hole we are trying to fill, and work our way inwards for a set number of iterations (6). 
+<p>
 
 </div>
 
 <div id='results' class='section'>
 
+<h2> Results </h2>
+
+<p>
 The results of the current algorithm are shown below.
+</p>
 
-<br>
-
-<img src='/img/camel_1.tif'/>
-<img src='/img/camel_fixed.tif'/>
+<img src='/img/camel_2.jpg'/>
+<img src='/img/camel_fixed.jpg'/>
 
 </div>
 
 <div id='source' class='section'>
+
+<h2> Source </h2>
+
+<p>
 Source code for the project is availible <a href="https://github.com/bobschriver/Digital-Image-Processing-II/tree/master/patchmatch">here</a>.
+</p>
+
 </div>
 
 
