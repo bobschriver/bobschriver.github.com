@@ -36,8 +36,10 @@ img{
 }
 
 iframe{
-	margin-left:10px;
-	margin-right:10px;
+	margin-left:auto;
+	margin-right:auto;
+
+	width: 500px;
 }
 
 .section {
