@@ -29,16 +29,18 @@ h2 {
 }
 
 h3 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
 
 img{
-	margin-left:20px;
-	margin-right:20px;
+	margin-left:auto;
+	margin-right:auto;
+
+	width: 200px;
 }
 
 iframe{
@@ -59,6 +61,8 @@ iframe{
 	margin-bottom:20px;
 	margin-left:auto;
 	margin-right:auto;
+
+	width: 400px;
 }
 
 .body {
