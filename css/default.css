@@ -11,7 +11,7 @@ p {
 li{
 	margin-left:15px;
 	margin-right:15px;
-	list-syle:none;
+	list-style:none;
 }
 
 h1 {
@@ -72,7 +72,9 @@ iframe{
 
 	text-align: justify;
 
-	line-height: 140%
+	line-height: 140%;
+
+	background-color:#ECECF6;
 }
 
 
