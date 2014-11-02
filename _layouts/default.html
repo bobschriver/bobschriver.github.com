@@ -1,7 +1,48 @@
 <head>
+	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    	<title>Bobschriver.github.com by bobschriver</title>
 
-<link rel='stylesheet' href='/css/default.css' type='text/css/'/>
-
+    	<link rel="stylesheet" href="/stylesheets/styles.css">
+    	<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    	<!--[if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+   
 </head>
 
-{{ content }}
+<body>
+	<div class="wrapper">
+		<header>
+		<h1><a href="/">Home</a></h1>
+		<p class="view"><a href="http://github.com/bobschriver">View my Github</a></p>
+
+		<h3> Blog </h3>
+		<div id="blog_posts_list">
+			{% for post in site.categories.blog %}
+			<a href="{{ post.url }}">{{ post.title }}</a></br>
+			{% endfor %}
+		</div>
+
+		</br><h3> Projects </h3>
+		<div id="projects_list">
+			{% for post in site.categories.project %}
+			<a href="{{ post.url }}">{{ post.title }}</a></br>
+			{% endfor %}
+		</div>
+
+		</br><h3> Presentations </h3>
+		<div id="presentations_list">
+		{% for post in site.categories.presentation %}
+			<a href="{{ post.url }}">{{ post.title }}</a></br>
+		{% endfor %}	
+		</div>
+
+		</header>
+
+		<section>
+		{{ content }}
+		</section>
+	</div>
+</body>
