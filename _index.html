@@ -1,0 +1,84 @@
+---
+layout: default
+title: Bob Schriver
+---
+
+<body>
+
+<div id='whole' class='body'>
+<div id='introduction' class='section'>
+
+<h2> Introduction </h2>
+
+<p>
+Hello, I'm Bob Schriver, and this is my personal internet info-site.
+</p>
+
+</div>
+
+<div id='projects' class='section'>
+
+<h2> Projects </h2>
+
+<p>
+{%for project in site.categories.project %}
+
+<li>
+
+<a href="{{ project.url }}">{{project.title}}</a>
+
+</li>
+
+{%endfor%}
+</p>
+
+</div>
+
+<div id='presentations' class='section'>
+
+<h2> Presentations </h2>
+
+<p>
+
+{%for presentation in site.categories.presentation%}
+
+<li>
+
+<a href="{{presentation.url}}">{{presentation.title}}</a>
+
+</li>
+
+{%endfor%}
+</p>
+
+</div>
+
+<div id='posts' class='section'>
+
+<h2> Posts </h2>
+
+<p>
+{% for post in site.categories.blog %}
+
+<li>
+<a href="{{post.url}}">{{ post.title }}</a>
+</li>
+
+{%endfor%}
+</p>
+
+</div>
+
+<div id='resume' class='section'>
+
+<h2> Resume </h2>
+
+<p>
+My current resume is hosted <a href="https://github.com/bobschriver/resume">here</a>, in both .doc and .pdf formats
+</p>
+
+</div>
+</div>
+
+<body>
+
