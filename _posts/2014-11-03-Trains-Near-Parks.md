@@ -5,6 +5,8 @@ categories: [project]
 tags: [coding,project,train,Amtrak,national park,national forest]
 ---
 
+![Trains Near Parks](/img/amtrak_header.png)
+
 ## Introduction ##
 
 This project started when I looked at a map of Amtrak stations, and noticed how close many of them were to national parks
