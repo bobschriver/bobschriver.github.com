@@ -16,8 +16,31 @@
 	<div class="wrapper">
 		<header>
 		<h1><a href="/">Home</a></h1>
+		
 		<p class="view"><a href="http://github.com/bobschriver">View my Github</a></p>
+		<p class="view"><a href="http://github.com/bobschriver/resume">View my Resume</a></p>
 
+		</br><h3> Coding Projects </h3>
+		<div id="coding_projects_list">
+			{% for post in site.categories.project %}
+			<a href="{{ post.url }}">{{ post.title }}</a></br>
+			{% endfor %}
+		</div>
+		
+		</br><h3> Coding Projects </h3>
+		<div id="research_projects_list">
+			<a href="#">Ultralight Ultracheap</a></br>
+			<a href="#">Colorado Plateau Loop</a></br>
+		</div>
+
+		</br><h3> Presentations </h3>
+		<div id="presentations_list">
+			{% for post in site.categories.presentation %}
+			<a href="{{ post.url }}">{{ post.title }}</a></br>
+			{% endfor %}	
+		</div>
+
+		</br>
 		<h3> Blog </h3>
 		<div id="blog_posts_list">
 			{% for post in site.categories.blog %}
@@ -25,19 +48,6 @@
 			{% endfor %}
 		</div>
 
-		</br><h3> Projects </h3>
-		<div id="projects_list">
-			{% for post in site.categories.project %}
-			<a href="{{ post.url }}">{{ post.title }}</a></br>
-			{% endfor %}
-		</div>
-
-		</br><h3> Presentations </h3>
-		<div id="presentations_list">
-		{% for post in site.categories.presentation %}
-			<a href="{{ post.url }}">{{ post.title }}</a></br>
-		{% endfor %}	
-		</div>
 
 		</header>
 
